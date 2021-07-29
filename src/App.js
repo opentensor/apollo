@@ -27,12 +27,12 @@ function Main () {
       <Loader size='small'>{text}</Loader>
     </Dimmer>;
 
-  const message = err =>
+  const message = () =>
     <Grid centered columns={2} padded>
       <Grid.Column>
         <Message negative compact floating
           header='Error Connecting to Substrate'
-          content={`Please contact us at support@opentensor.ai`}
+          content='Please contact us at support@opentensor.ai'
         />
       </Grid.Column>
     </Grid>;
